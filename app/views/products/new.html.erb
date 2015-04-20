@@ -1,0 +1,6 @@
+<form action="<%= products_path %>" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  Name: <input type="text" name="product[name]">
+  Description: <input type="text" name="product[description]">  
+  <input type="submit">
+</form>

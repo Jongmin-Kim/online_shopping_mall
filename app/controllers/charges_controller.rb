@@ -3,8 +3,9 @@ class ChargesController < ApplicationController
   end
 
   def create
-    # Amount in cents
+    
     @product = Product.find(params[:id])
+    # Amount in cents
     @amount = @product.price
 
     customer = Stripe::Customer.create(

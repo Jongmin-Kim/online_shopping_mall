@@ -1,6 +1,7 @@
-<h1>Online Shopping Mall</h1>
-<% @products.each do |product| %>
-  <%= link_to "#{product.name}", product_path(product) %><br>
-  <%= product.description %><br><br>
-<% end %>
-
+<div class="container">
+  <h1>Online Shopping Mall</h1>
+  <% @products.each do |product| %>
+    <%= link_to "#{product.name}", product_path(product) %><br>
+    <%= product.description %><br><br>
+  <% end %>
+</div>

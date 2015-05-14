@@ -10,7 +10,7 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
     if @product.save
-      redirect_to new_charge_path
+      redirect_to root_path
     else
       flash[:alert]= @product.errors.full_message
       render 'new'

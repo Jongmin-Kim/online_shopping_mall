@@ -20,6 +20,8 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
                               password: 'foobar', 
                               password_confirmation: 'foobar'}
     end
-    assert_redirected_to '/products'
+    assert_redirected_to products_path
+    follow_redirect!
+    assert is_logged_in?
   end
 end

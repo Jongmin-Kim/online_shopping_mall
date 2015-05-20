@@ -1,6 +1,6 @@
-<div class="container">
-<% @users.each do |user| %>
-  <%= user.name %><br>
-  <%= user.email %>
-<% end %>
-</div>
+<h1>All users</h1>
+<%= will_paginate %>
+<ul>
+  <%= render @users %>
+</ul>
+<%= will_paginate %>

@@ -27,6 +27,9 @@ gem 'figaro'
 gem 'bcrypt', '3.1.7'
 gem 'validates_email_format_of'
 gem 'bootstrap-sass', '3.2.0.0'
+gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -44,7 +47,7 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+  gem 'spring', '1.3.6'
   gem 'rspec'
   gem 'rspec-rails'
 end

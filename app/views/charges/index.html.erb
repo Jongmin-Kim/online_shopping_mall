@@ -1,0 +1,5 @@
+<h1>Your Purchase</h1>
+
+<% @charges.each do |charge| %>
+  <p><%= charge.time %>: <%= charge.amount %></p>
+<% end %>
